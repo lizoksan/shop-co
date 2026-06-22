@@ -12,7 +12,7 @@ Responsive e-commerce landing page with modern layout, sliders, and interactive 
 
 - **HTML5** (Semantic layout, SVG Sprites)
 - **CSS3 / SCSS** (BEM methodology, Flexbox, Grid, Media Queries)
-- **JavaScript (ES6+)** (DOM manipulation, components management)
+- **JavaScript (ES6+)** (DOM manipulation)
 - **Swiper.js** (Custom touch-slider for products and reviews)
 - **Webpack 5** (Module bundler, asset management, optimization)
 
