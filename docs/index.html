@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+			name="viewport"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+			rel="stylesheet"
+		/>
+	<link href="main.css" rel="stylesheet"></head>
+	<body>
+		<div class="announcement_bar js-announcement-bar">
+			<span class="announcement_bar__text">
+				Sign up and get 20% off to your first order.
+				<a class="announcement_bar__link" href="./index.html"> Sign Up Now </a>
+			</span>
+			<button type="button" class="announcement_bar__btn btn js-bar-btn">
+				<svg class="announcement_bar__icon icon" width="19" height="19">
+					<use href="images/sprite.svg#cross"></use>
+				</svg>
+			</button>
+		</div>
+
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__contant">
+					<div class="header__main">
+						<button type="button" class="burger btn js-open-menu">
+							<span class="burger__span"></span>
+						</button>
+						<a class="logo" href="./template.html">SHOP.CO</a>
+					</div>
+
+					<div class="backdrop js-menu-backdrop">
+						<div class="nav js-menu-container">
+							<svg class="nav__cross icon js-close-menu" width="19" height="19">
+								<use href="images/sprite.svg#cross"></use>
+							</svg>
+							<ul class="nav__list">
+								<li class="nav__item">
+									<button type="button" class="nav__dropdown btn" href="./index.html">
+										Shop<svg class="nav__icon icon" width="16" height="16">
+											<use href="images/sprite.svg#arrow"></use>
+										</svg>
+									</button>
+
+									<ul class="dropdown">
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="./index.html">Casual</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="./index.html">Formal</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="./index.html">Party</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="./index.html">Gym</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nav__item">
+									<a class="nav__link" href="#selling">On Sale</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="#arrivals">New Arrivals</a>
+								</li>
+								<li class="nav__item">
+									<a class="nav__link" href="#brands">Brands</a>
+								</li>
+							</ul>
+							<form class="nav__form form">
+								<div class="form__wrapper">
+									<input class="form__input" name="input" type="text" placeholder="Search for products..." />
+									<svg class="form__icon icon" viewBox="0 0 24 24" width="24" height="24">
+										<use href="images/sprite.svg#search"></use>
+									</svg>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="./template.html" class="header__link">
+								<svg class="header__icon icon" viewBox="0 0 24 24" width="24" height="24">
+									<use href="images/sprite.svg#search"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="./template.html" class="header__link">
+								<svg class="header__icon icon" viewBox="0 0 24 24" width="24" height="24">
+									<use href="images/sprite.svg#cart"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header__item">
+							<a href="./template.html" class="header__link">
+								<svg class="header__icon icon" viewBox="0 0 24 24" width="24" height="24">
+									<use href="images/sprite.svg#avatar"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__container container">
+					<div class="hero__wrapper">
+						<div class="hero__content">
+							<h1 class="hero__title title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+							<p class="hero__text">
+								Browse through our diverse range of meticulously crafted garments, designed to bring out your
+								individuality and cater to your sense of style.
+							</p>
+							<a class="hero__link button" href="./template.html">Shop Now</a>
+
+							<ul class="stats">
+								<li class="stats__stat">
+									<span class="stats__value">200+</span>
+									<span class="stats__label">International Brands</span>
+								</li>
+								<li class="stats__stat">
+									<span class="stats__value">2,000+</span>
+									<span class="stats__label">High-Quality Products</span>
+								</li>
+								<li class="stats__stat">
+									<span class="stats__value">30,000+</span>
+									<span class="stats__label">Happy Customers</span>
+								</li>
+							</ul>
+						</div>
+						<div class="hero__media">
+							<picture class="hero__picture">
+								<source srcset="images/hero-desk.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+
+								<source srcset="images/hero-mob.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+								<img class="hero__img img" src="images/hero-mob.jpg" alt="models" />
+							</picture>
+							<svg class="hero__icon icon hero__icon--small" viewBox="0 0 24 24" width="44" height="44">
+								<use href="images/sprite.svg#star"></use>
+							</svg>
+							<svg class="hero__icon icon hero__icon--big" viewBox="0 0 24 24" width="76" height="76">
+								<use href="images/sprite.svg#star"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="brands" id="brands">
+				<div class="container">
+					<ul class="brands__list">
+						<li class="brands__item">
+							<svg class="brands__logo brands__logo--versace icon" width="117" height="23">
+								<use href="images/sprite.svg#versace"></use>
+							</svg>
+						</li>
+						<li class="brands__item">
+							<svg class="brands__logo brands__logo--zara icon" width="64" height="27">
+								<use href="images/sprite.svg#zara"></use>
+							</svg>
+						</li>
+						<li class="brands__item">
+							<svg class="brands__logo brands__logo--gucci icon" width="109" height="25">
+								<use href="images/sprite.svg#gucci"></use>
+							</svg>
+						</li>
+						<li class="brands__item">
+							<svg class="brands__logo brands__logo--prada icon" width="127" height="21">
+								<use href="images/sprite.svg#prada"></use>
+							</svg>
+						</li>
+						<li class="brands__item">
+							<svg class="brands__logo brands__logo--klein icon" width="139" height="22">
+								<use href="images/sprite.svg#calvine-klein"></use>
+							</svg>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="arrivals" id="arrivals">
+				<div class="container">
+					<div class="products">
+						<h2 class="products__title title">New Arrivals</h2>
+						<div class="products__content">
+							<div class="products__swiper swiper">
+								<div class="products__wrapper swiper-wrapper">
+									<div class="products__slide swiper-slide">
+										<a class="card" href="./index.html">
+											<picture class="card__picture">
+												<source
+													srcset="images/arrivals1-desk.jpg"
+													type="image/jpeg"
+													media="(min-width: 1440px)"
+												/>
+
+												<source
+													srcset="images/arrivals1-mob.jpg"
+													type="image/jpeg"
+													media="(max-width: 767px)"
+												/>
+
+												<img class="card__img img" src="images/arrivals1-mob.jpg" alt="t-shirt" />
+											</picture>
+
+											<div class="card__info">
+												<p class="card__subtitle">T-shirt with Tape Details</p>
+												<!-- <p class="card__subtitle">Skinny Fit Jeans</p> -->
+												<div class="card__ratings">
+													<ul class="stars">
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star2"></use>
+															</svg>
+														</li>
+													</ul>
+													<span class="card__rating"
+														>4.5/<span class="card__rating card__rating--max">5</span></span
+													>
+												</div>
+												<div class="card__pricing">
+													<p class="card__price">$120</p>
+													<!-- <p class="card__price card__price--inactive">$260</p> -->
+													<!-- <span class="card__discount">-20%</span> -->
+												</div>
+											</div></a
+										>
+									</div>
+									<div class="products__slide swiper-slide">
+										<a class="card" href="./index.html">
+											<picture class="card__picture">
+												<source
+													srcset="images/arrivals2-desk.jpg"
+													type="image/jpeg"
+													media="(min-width: 1440px)"
+												/>
+
+												<source
+													srcset="images/arrivals2-desk.jpg"
+													type="image/jpeg"
+													media="(max-width: 767px)"
+												/>
+
+												<img class="card__img img" src="images/arrivals1-mob.jpg" alt="t-shirt" />
+											</picture>
+
+											<div class="card__info">
+												<p class="card__subtitle">Skinny Fit Jeans</p>
+
+												<div class="card__ratings">
+													<ul class="stars">
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star2"></use>
+															</svg>
+														</li>
+													</ul>
+													<span class="card__rating"
+														>3.5/<span class="card__rating card__rating--max">5</span></span
+													>
+												</div>
+												<div class="card__pricing">
+													<p class="card__price">$240</p>
+													<p class="card__price card__price--inactive">$260</p>
+													<span class="card__discount">-20%</span>
+												</div>
+											</div></a
+										>
+									</div>
+									<div class="products__slide swiper-slide">
+										<a class="card" href="./index.html">
+											<picture class="card__picture">
+												<source
+													srcset="images/arrivals3-desk.jpg"
+													type="image/jpeg"
+													media="(min-width: 1440px)"
+												/>
+
+												<source
+													srcset="images/arrivals3-desk.jpg"
+													type="image/jpeg"
+													media="(max-width: 767px)"
+												/>
+
+												<img class="card__img img" src="images/arrivals3-desk.jpg" alt="t-shirt" />
+											</picture>
+
+											<div class="card__info">
+												<p class="card__subtitle">Checkered Shirt</p>
+												<!-- <p class="card__subtitle">Skinny Fit Jeans</p> -->
+												<div class="card__ratings">
+													<ul class="stars">
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star2"></use>
+															</svg>
+														</li>
+													</ul>
+													<span class="card__rating"
+														>4.5/<span class="card__rating card__rating--max">5</span></span
+													>
+												</div>
+												<div class="card__pricing">
+													<p class="card__price">$120</p>
+													<!-- <p class="card__price card__price--inactive">$260</p> -->
+													<!-- <span class="card__discount">-20%</span> -->
+												</div>
+											</div></a
+										>
+									</div>
+									<div class="products__slide swiper-slide">
+										<a class="card" href="./index.html">
+											<picture class="card__picture">
+												<source
+													srcset="images/arrivals4-desk.jpg"
+													type="image/jpeg"
+													media="(min-width: 1440px)"
+												/>
+
+												<source
+													srcset="images/arrivals4-desk.jpg"
+													type="image/jpeg"
+													media="(max-width: 767px)"
+												/>
+
+												<img class="card__img img" src="images/arrivals4-desk.jpg" alt="t-shirt" />
+											</picture>
+
+											<div class="card__info">
+												<p class="card__subtitle">Sleeve Striped T-shirt</p>
+
+												<div class="card__ratings">
+													<ul class="stars">
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star2"></use>
+															</svg>
+														</li>
+													</ul>
+													<span class="card__rating"
+														>4.5/<span class="card__rating card__rating--max">5</span></span
+													>
+												</div>
+												<div class="card__pricing">
+													<p class="card__price">$130</p>
+													<p class="card__price card__price--inactive">$160</p>
+													<span class="card__discount">-30%</span>
+												</div>
+											</div></a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="products__button button" href="./template.html">View All</a>
+					</div>
+				</div>
+			</section>
+			<section class="selling" id="selling">
+				<div class="container">
+					<div class="products">
+						<h2 class="products__title title">Top Selling</h2>
+						<div class="products__content">
+							<div class="products__swiper swiper">
+								<div class="products__wrapper swiper-wrapper">
+									<div class="products__slide swiper-slide">
+										<a class="card" href="./index.html">
+											<picture class="card__picture">
+												<source
+													srcset="images/selling1-desk.jpg"
+													type="image/jpeg"
+													media="(min-width: 1440px)"
+												/>
+
+												<source
+													srcset="images/selling1-desk.jpg"
+													type="image/jpeg"
+													media="(max-width: 767px)"
+												/>
+
+												<img class="card__img img" src="images/selling1-desk.jpg" alt="t-shirt" />
+											</picture>
+
+											<div class="card__info">
+												<p class="card__subtitle">Vertical Stiped Shirt</p>
+
+												<div class="card__ratings">
+													<ul class="stars">
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+													</ul>
+													<span class="card__rating"
+														>5/<span class="card__rating card__rating--max">5</span></span
+													>
+												</div>
+												<div class="card__pricing">
+													<p class="card__price">$212</p>
+													<p class="card__price card__price--inactive">$232</p>
+													<span class="card__discount">-20%</span>
+												</div>
+											</div></a
+										>
+									</div>
+									<div class="products__slide swiper-slide">
+										<a class="card" href="./index.html">
+											<picture class="card__picture">
+												<source
+													srcset="images/selling2-desk.jpg"
+													type="image/jpeg"
+													media="(min-width: 1440px)"
+												/>
+
+												<source
+													srcset="images/selling2-desk.jpg"
+													type="image/jpeg"
+													media="(max-width: 767px)"
+												/>
+
+												<img class="card__img img" src="images/selling2-desk.jpg" alt="t-shirt" />
+											</picture>
+
+											<div class="card__info">
+												<p class="card__subtitle">Courage Graphic T-shirt</p>
+												<!-- <p class="card__subtitle">Skinny Fit Jeans</p> -->
+												<div class="card__ratings">
+													<ul class="stars">
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+													</ul>
+													<span class="card__rating"
+														>4.0/<span class="card__rating card__rating--max">5</span></span
+													>
+												</div>
+												<div class="card__pricing">
+													<p class="card__price">$145</p>
+													<!-- <p class="card__price card__price--inactive">$260</p> -->
+													<!-- <span class="card__discount">-20%</span> -->
+												</div>
+											</div></a
+										>
+									</div>
+									<div class="products__slide swiper-slide">
+										<a class="card" href="./index.html">
+											<picture class="card__picture">
+												<source
+													srcset="images/selling3-desk.jpg"
+													type="image/jpeg"
+													media="(min-width: 1440px)"
+												/>
+
+												<source
+													srcset="images/selling3-desk.jpg"
+													type="image/jpeg"
+													media="(max-width: 767px)"
+												/>
+
+												<img class="card__img img" src="images/selling3-desk.jpg" alt="t-shirt" />
+											</picture>
+
+											<div class="card__info">
+												<p class="card__subtitle">Loose Fit Bermuda Shorts</p>
+												<!-- <p class="card__subtitle">Skinny Fit Jeans</p> -->
+												<div class="card__ratings">
+													<ul class="stars">
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+													</ul>
+													<span class="card__rating"
+														>3.0/<span class="card__rating card__rating--max">5</span></span
+													>
+												</div>
+												<div class="card__pricing">
+													<p class="card__price">$80</p>
+												</div>
+											</div></a
+										>
+									</div>
+									<div class="products__slide swiper-slide">
+										<a class="card" href="./index.html">
+											<picture class="card__picture">
+												<source
+													srcset="images/selling4-desk.jpg"
+													type="image/jpeg"
+													media="(min-width: 1440px)"
+												/>
+
+												<source
+													srcset="images/selling4-desk.jpg"
+													type="image/jpeg"
+													media="(max-width: 767px)"
+												/>
+
+												<img class="card__img img" src="images/selling4-desk.jpg" alt="t-shirt" />
+											</picture>
+
+											<div class="card__info">
+												<p class="card__subtitle">Faded Skinny J</p>
+												<!-- <p class="card__subtitle">Skinny Fit Jeans</p> -->
+												<div class="card__ratings">
+													<ul class="stars">
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star1"></use>
+															</svg>
+														</li>
+														<li class="stars__star">
+															<svg class="stars__icon icon">
+																<use href="images/sprite.svg#Star2"></use>
+															</svg>
+														</li>
+													</ul>
+													<span class="card__rating"
+														>4.5/<span class="card__rating card__rating--max">5</span></span
+													>
+												</div>
+												<div class="card__pricing">
+													<p class="card__price">$120</p>
+													<!-- <p class="card__price card__price--inactive">$260</p> -->
+													<!-- <span class="card__discount">-20%</span> -->
+												</div>
+											</div></a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="products__button button" href="./template.html">View All</a>
+					</div>
+				</div>
+			</section>
+			<section class="categories">
+				<div class="categories__container container">
+					<h2 class="categories__title title">BROWSE BY dress STYLE</h2>
+					<ul class="categories__list">
+						<li class="category__item">
+							<a class="category__link" href="./index.html">
+								<picture class="category__picture">
+									<source
+										srcset="images/category1-desk.jpg"
+										type="image/jpeg"
+										media="(min-width: 1440px)"
+									/>
+
+									<source
+										srcset="images/category1-mob.jpg"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+
+									<img class="category__img img" src="images/category1-mob.jpg" alt="Casual category" />
+								</picture>
+
+								<span class="category__name">Casual</span></a
+							>
+						</li>
+						<li class="category__item">
+							<a class="category__link" href="./index.html">
+								<picture class="category__picture">
+									<source
+										srcset="images/category2-desk.jpg"
+										type="image/jpeg"
+										media="(min-width: 1440px)"
+									/>
+
+									<source
+										srcset="images/category2-mob.jpg"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+
+									<img
+										class="category__img img"
+										src="images/category2-mob.jpg"
+										alt="Formal category"
+									/> </picture
+								><span class="category__name">Formal</span></a
+							>
+						</li>
+						<li class="category__item">
+							<a class="category__link" href="./index.html">
+								<picture class="category__picture">
+									<source
+										srcset="images/category3-desk.jpg"
+										type="image/jpeg"
+										media="(min-width: 1440px)"
+									/>
+
+									<source
+										srcset="images/category3-mob.jpg"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+
+									<img
+										class="category__img img"
+										src="images/category3-mob.jpg"
+										alt="Party category"
+									/> </picture
+								><span class="category__name">Party</span></a
+							>
+						</li>
+						<li class="category__item">
+							<a class="category__link" href="./index.html">
+								<picture class="category__picture">
+									<source
+										srcset="images/category4-desk.jpg"
+										type="image/jpeg"
+										media="(min-width: 1440px)"
+									/>
+
+									<source
+										srcset="images/category4-mob.jpg"
+										type="image/jpeg"
+										media="(max-width: 767px)"
+									/>
+
+									<img
+										class="category__img img"
+										src="images/category4-mob.jpg"
+										alt="Gym category"
+									/> </picture
+								><span class="category__name">Gym</span></a
+							>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container container">
+					<div class="reviews__meta">
+						<h2 class="reviews__title title">OUR HAPPY CUSTOMERS</h2>
+
+						<div class="reviews__swich">
+							<button type="button" class="reviews__btn reviews__btn--prev btn">
+								<svg class="reviews__icon icon">
+									<use href="images/sprite.svg#arrow-slider"></use>
+								</svg>
+							</button>
+							<button type="button" class="reviews__btn reviews__btn--next btn">
+								<svg class="reviews__icon icon">
+									<use href="images/sprite.svg#arrow-slider"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="reviews__swiper swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<ul class="stars stars--big">
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="review">
+									<p class="review__subtitle">Sarah M.</p>
+									<svg class="review__icon icon">
+										<use href="images/sprite.svg#check"></use>
+									</svg>
+								</div>
+								<p class="review__text">
+									"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual
+									wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+								</p>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<ul class="stars stars--big">
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="review">
+									<p class="review__subtitle">Alex K.</p>
+									<svg class="review__icon icon">
+										<use href="images/sprite.svg#check"></use>
+									</svg>
+								</div>
+								<p class="review__text">
+									"Finding clothes that align with my personal style used to be a challenge until I discovered
+									Shop.co. The range of options they offer is truly remarkable, catering to a variety of
+									tastes and occasions.”
+								</p>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<ul class="stars stars--big">
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="review">
+									<p class="review__subtitle">James L.</p>
+									<svg class="review__icon icon">
+										<use href="images/sprite.svg#check"></use>
+									</svg>
+								</div>
+								<p class="review__text">
+									"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
+									stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with
+									the latest trends.”
+								</p>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<ul class="stars stars--big">
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="review">
+									<p class="review__subtitle">Samantha D.</p>
+									<svg class="review__icon icon">
+										<use href="images/sprite.svg#check"></use>
+									</svg>
+								</div>
+								<p class="review__text">
+									"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable.
+									As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to
+									shirt."
+								</p>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<ul class="stars stars--big">
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="review">
+									<p class="review__subtitle">Alex K.</p>
+									<svg class="review__icon icon">
+										<use href="images/sprite.svg#check"></use>
+									</svg>
+								</div>
+								<p class="review__text">
+									"Finding clothes that align with my personal style used to be a challenge until I discovered
+									Shop.co. The range of options they offer is truly remarkable, catering to a variety of
+									tastes and occasions.”
+								</p>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<ul class="stars stars--big">
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+									<li class="stars__star">
+										<svg class="stars__icon stars__icon--big icon">
+											<use href="images/sprite.svg#Star1"></use>
+										</svg>
+									</li>
+								</ul>
+								<div class="review">
+									<p class="review__subtitle">James L.</p>
+									<svg class="review__icon icon">
+										<use href="images/sprite.svg#check"></use>
+									</svg>
+								</div>
+								<p class="review__text">
+									"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have
+									stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with
+									the latest trends.”
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe">
+				<div class="subscribe__container container">
+					<h2 class="subscribe__title title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+					<form class="subscribe__form form" action="submit">
+						<input
+							class="subscribe__input"
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Enter your email address"
+						/>
+						<svg class="subscribe__icon icon">
+							<use href="images/sprite.svg#mail"></use>
+						</svg>
+						<button class="subscribe__button button" type="submit">Subscribe to Newsletter</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__top">
+					<div class="footer__brand">
+						<a class="footer__logo logo" href="./template.html">SHOP.CO</a>
+						<p class="footer__description">
+							We have clothes that suits your style and which you’re proud to wear. From women to men.
+						</p>
+						<ul class="footer__socials">
+							<li class="footer__social">
+								<a class="footer__social_link" href="./index.html">
+									<svg class="footer__icon icon">
+										<use href="images/sprite.svg#twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__social footer__social--darck">
+								<a class="footer__social_link" href="./index.html">
+									<svg class="footer__icon icon">
+										<use href="images/sprite.svg#fb"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__social">
+								<a class="footer__social_link" href="./index.html">
+									<svg class="footer__icon icon">
+										<use href="images/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__social">
+								<a class="footer__social_link" href="./index.html">
+									<svg class="footer__icon icon">
+										<use href="images/sprite.svg#github"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="footer__columns">
+						<li class="footer__column">
+							<h3 class="footer__title">Company</h3>
+
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">About</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Features </a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Works</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Career</a>
+								</li>
+							</ul>
+						</li>
+						<li class="footer__column">
+							<h3 class="footer__title">Help</h3>
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Customer Support</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Delivery Details</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Terms & Conditions</a>
+								</li>
+
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Privacy Policy</a>
+								</li>
+							</ul>
+						</li>
+						<li class="footer__column">
+							<h3 class="footer__title">FAQ</h3>
+
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Account</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Manage Deliveries </a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Orders</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Payment</a>
+								</li>
+							</ul>
+						</li>
+						<li class="footer__column">
+							<h3 class="footer__title">Resources</h3>
+
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Free eBoocks</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Development Tutorial</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">How to - Blog</a>
+								</li>
+								<li class="footer__item">
+									<a class="footer__link" href="./index.html">Youtube Playlist</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copyright">
+						<span>Shop.co © 2000-2023, All Rights Reserved</span>
+					</div>
+					<ul class="footer__payments">
+						<li class="footer__payment">
+							<svg class="footer__pay icon">
+								<use href="images/sprite.svg#Visa"></use>
+							</svg>
+						</li>
+
+						<li class="footer__payment">
+							<svg class="footer__pay icon">
+								<use href="images/sprite.svg#Mastercard"></use>
+							</svg>
+						</li>
+						<li class="footer__payment">
+							<svg class="footer__pay icon">
+								<use href="images/sprite.svg#Paypal"></use>
+							</svg>
+						</li>
+						<li class="footer__payment">
+							<svg class="footer__pay icon">
+								<use href="images/sprite.svg#Pay"></use>
+							</svg>
+						</li>
+						<li class="footer__payment">
+							<svg class="footer__pay icon">
+								<use href="images/sprite.svg#GPay"></use>
+							</svg>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script type="module" src="scripts/index.js"></script>
+	<script defer src="scripts/main.js"></script></body>
+</html>

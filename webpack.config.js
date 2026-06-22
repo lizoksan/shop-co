@@ -7,7 +7,7 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 module.exports = {
 	entry: './src/scripts/index.js',
 	output: {
-		path: path.join(__dirname, 'dist'),
+		path: path.join(__dirname, 'docs'),
 		filename: 'scripts/[name].js',
 		assetModuleFilename: 'images/[name][ext]',
 	},
