@@ -4,6 +4,10 @@ Markdown
 
 Responsive e-commerce landing page with modern layout, sliders, and interactive mobile navigation.
 
+## 🚀 Live Demo
+
+[View Live Project](https://lizoksan.github.io/shop-co/)
+
 ## 🛠️ Tech Stack & Tools
 
 - **HTML5** (Semantic layout, SVG Sprites)
@@ -23,5 +27,5 @@ Responsive e-commerce landing page with modern layout, sliders, and interactive 
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/ВАШ_НІК/shop-co.git](https://github.com/ВАШ_НІК/shop-co.git)
+   git clone [https://github.com/lizoksan/shop-co.git](https://github.com/lizoksan/shop-co.git)
    ```
