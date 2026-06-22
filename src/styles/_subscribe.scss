@@ -1,13 +1,13 @@
 .subscribe {
 	@include mq('desktop', max) {
-		padding: 0 1.6rem;
+		padding: 2.5rem 0 2rem;
 	}
 
 	@include mq('desktop') {
-		padding: 0 10rem;
+		padding: 5.9rem 0 2rem;
 	}
 
-	&__container {
+	&__wrapper {
 		position: relative;
 		z-index: 1;
 
@@ -52,7 +52,7 @@
 		}
 
 		@include mq('desktop') {
-			gap: 1.6rem;
+			gap: 1.5rem;
 		}
 	}
 
@@ -92,7 +92,6 @@
 	}
 
 	&__button {
-		padding: 1.35rem;
 		border: none;
 		background-color: $white-color;
 
@@ -101,6 +100,14 @@
 
 		&:hover {
 			background-color: $background-color;
+		}
+
+		@include mq('desktop', max) {
+			padding: 1.35rem;
+		}
+
+		@include mq('desktop') {
+			padding: 1.45rem;
 		}
 	}
 }

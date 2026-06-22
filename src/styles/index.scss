@@ -68,7 +68,7 @@ html {
 .button {
 	display: flex;
 	justify-content: center;
-	padding: 1.7rem;
+	padding: 1.8rem;
 	width: 100%;
 	border-radius: 6.2rem;
 	margin: 0 auto;
@@ -94,7 +94,11 @@ html {
 	}
 }
 
-img {
+.picture {
+	display: block;
+}
+
+.img {
 	display: block;
 	margin: 0 auto;
 }
@@ -167,7 +171,7 @@ img {
 .products {
 	&__content {
 		@include mq('desktop', max) {
-			margin-bottom: 2.7rem;
+			margin-bottom: 2.3rem;
 		}
 
 		@include mq('desktop') {
@@ -208,7 +212,6 @@ img {
 		color: $black-color;
 
 		&:hover {
-			// color: $white-color;
 			background-color: $black-color-transparent20;
 		}
 
@@ -229,19 +232,20 @@ img {
 	display: block;
 	color: $black-color;
 	text-decoration: none;
+	min-height: 28.45rem;
 	font-size: 1.6rem;
-	border-radius: 1.2rem;
-
-	transition: box-shadow 0.3s ease;
+	border-radius: 2.2rem;
+	transition: opacity 0.3s ease;
 
 	&:hover {
-		transform: translateY(-4px); /* картка злегка піднімається */
-		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); /* тінь стає глибшою */
+		opacity: 0.8;
+
+		@include mq('desktop') {
+			transform: translateY(-4px);
+		}
 	}
 
 	&__picture {
-		display: block;
-
 		@include mq('desktop', max) {
 			margin-bottom: 1.3rem;
 			width: 19.8rem;
@@ -316,13 +320,23 @@ img {
 	}
 
 	&__discount {
-		margin-left: 1rem;
 		display: block;
-		padding: 0.7rem 1.2rem;
-		font-size: 1.1rem;
-		border-radius: 1.2rem;
+
 		color: $text-accent-color;
 		background-color: $text-accent-color-transparent;
+
+		@include mq('desktop', max) {
+			padding: 0.5rem 0.6rem;
+			border-radius: 1.2rem;
+			font-size: 1rem;
+		}
+
+		@include mq('desktop') {
+			margin-left: 1rem;
+			padding: 0.7rem 1.2rem;
+			border-radius: 1.2rem;
+			font-size: 1.1rem;
+		}
 	}
 }
 

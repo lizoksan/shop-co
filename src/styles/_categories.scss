@@ -1,13 +1,13 @@
 .categories {
 	@include mq('desktop', max) {
-		padding: 0 1.6rem;
+		padding: 2.5rem 0;
 	}
 
 	@include mq('desktop') {
-		padding: 0 10rem;
+		padding: 4rem 0;
 	}
 
-	&__container {
+	&__wrapper {
 		background-color: $background-color;
 
 		@include mq('desktop', max) {
@@ -26,7 +26,7 @@
 		line-height: 109%;
 
 		@include mq('desktop', max) {
-			margin-bottom: 2.3rem;
+			margin-bottom: 2.6rem;
 		}
 
 		@include mq('desktop') {

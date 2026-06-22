@@ -3,12 +3,12 @@
 
 	@include mq('desktop', max) {
 		padding: 18.6rem 0 7.8rem;
-		margin-top: -15.8rem;
+		margin-top: -17.8rem;
 	}
 
 	@include mq('desktop') {
 		padding: 14rem 0 8.2rem;
-		margin-top: -9rem;
+		margin-top: -11rem;
 	}
 
 	&__top {

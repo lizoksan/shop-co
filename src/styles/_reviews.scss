@@ -1,10 +1,10 @@
 .reviews {
 	@include mq('desktop', max) {
-		padding: 5.6rem 0 5rem;
+		padding: 3.1rem 0 2.5rem;
 	}
 
 	@include mq('desktop') {
-		padding: 9rem 0 8.2rem;
+		padding: 5.1rem 0 2.2rem;
 	}
 
 	&__meta {
@@ -33,6 +33,11 @@
 
 	&__btn {
 		cursor: pointer;
+		transition: color 0.1s ease;
+
+		&:hover {
+			color: $black-color-transparent40;
+		}
 		&--next {
 			transform: rotate(180deg);
 		}
