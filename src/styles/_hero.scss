@@ -1,0 +1,204 @@
+.hero {
+	position: relative;
+
+	background-color: $background-color;
+	overflow: hidden;
+
+	@include mq('desktop', max) {
+		padding: 3.5rem 0 0;
+	}
+
+	@include mq('desktop') {
+		padding: 0;
+		// padding: 9.5rem 0 0 0;
+	}
+
+	&__container {
+		@include mq('desktop') {
+			padding: 0 0 0 10rem;
+		}
+	}
+
+	&__wrapper {
+		@include mq('desktop') {
+			display: flex;
+		}
+	}
+
+	&__content {
+		@include mq('desktop') {
+			max-width: 60rem;
+			padding: 9.5rem 0 0 0;
+		}
+	}
+
+	&__title {
+		letter-spacing: -2%;
+		line-height: 96%;
+
+		@include mq('desktop', max) {
+			margin-bottom: 1.1rem;
+			font-size: 3.6rem;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 1.8rem;
+			font-size: 6.5rem;
+		}
+	}
+
+	&__text {
+		display: block;
+		letter-spacing: 4%;
+		line-height: 1.6;
+
+		@include mq('desktop', max) {
+			margin-bottom: 2rem;
+			font-size: 1.2rem;
+		}
+
+		@include mq('desktop') {
+			display: block;
+			max-width: 56rem;
+			font-size: 1.4rem;
+			margin-bottom: 2.8rem;
+		}
+	}
+
+	&__link {
+		border: none;
+		color: $white-color;
+		background-color: $black-color;
+
+		&:hover {
+			color: $black-color;
+
+			background-color: $black-color-transparent40;
+		}
+
+		@include mq('desktop', max) {
+			margin: 0 0 2.3rem;
+		}
+		@include mq('desktop') {
+			margin: 0 0 5.5rem;
+			max-width: 21rem;
+		}
+	}
+
+	&__media {
+		position: relative;
+
+		@include mq('desktop', max) {
+			padding: 3rem 0 0;
+			margin-left: -2.9rem;
+		}
+
+		@include mq('desktop') {
+			display: flex;
+			padding: 3.9rem 0 0 0;
+			left: 4.7rem;
+		}
+	}
+
+	&__picture {
+		display: block;
+
+		@include mq('desktop', max) {
+			height: 41.9rem;
+			width: 42.1rem;
+		}
+		@include mq('desktop') {
+			height: 62.1rem;
+			width: 62.3rem;
+		}
+	}
+
+	&__icon {
+		fill: $black-color;
+		position: absolute;
+
+		z-index: 3;
+
+		&--small {
+			@include mq('desktop', max) {
+				top: 13.7rem;
+				left: 2.7rem;
+			}
+
+			@include mq('desktop') {
+				top: 29.7rem;
+				left: 0.2rem;
+				width: 5.6rem;
+				height: 5.6rem;
+			}
+		}
+
+		&--big {
+			@include mq('desktop', max) {
+				top: 4rem;
+				right: 0.5rem;
+			}
+
+			@include mq('desktop') {
+				top: 8.6rem;
+				right: 4.9rem;
+				width: 10.4rem;
+				height: 10.4rem;
+			}
+		}
+	}
+}
+
+.stats {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+
+	z-index: 2;
+
+	@include mq('desktop', max) {
+		justify-content: center;
+		gap: 2.1rem 5.5rem;
+		margin-bottom: -0.3rem;
+	}
+
+	@include mq('desktop') {
+		justify-content: start;
+		gap: 7.3rem;
+	}
+
+	&__stat {
+		display: flex;
+		flex-direction: column;
+
+		@include mq('desktop', max) {
+			gap: 0.4rem;
+		}
+	}
+
+	&__value {
+		@include mq('desktop', max) {
+			margin-bottom: 0.2rem;
+			font-weight: 700;
+			font-size: 2.5rem;
+			letter-spacing: -4%;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 0.6rem;
+			font-weight: 800;
+			font-size: 4rem;
+			letter-spacing: -4%;
+		}
+	}
+
+	&__label {
+		@include mq('desktop', max) {
+			font-size: 1.1rem;
+		}
+
+		@include mq('desktop') {
+			font-size: 1.4rem;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.arrivals {
+	position: relative;
+
+	@include mq('desktop', max) {
+		padding: 5.7rem 0 3.9rem;
+	}
+
+	@include mq('desktop') {
+		padding: 8.4rem 0 6.2rem;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+
+		bottom: 0;
+
+		height: 0.1rem;
+		background-color: $black-color-transparent10;
+
+		@include mq('desktop', max) {
+			left: 1.6rem;
+			right: 1.6rem;
+		}
+
+		@include mq('desktop') {
+			left: 10rem;
+			right: 10rem;
+		}
+	}
+}

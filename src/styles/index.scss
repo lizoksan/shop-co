@@ -1,0 +1,338 @@
+@import 'base/mixins.scss';
+@import 'var';
+
+html {
+	font-family: $font-main;
+	font-size: 10px;
+
+	background-color: $white-color;
+
+	@media (max-width: 389px) {
+		font-size: calc(100vw / 389 * 10);
+	}
+
+	@media (min-width: 390px) and (max-width: 767px) {
+		font-size: 10px;
+	}
+
+	@media (min-width: 768px) and (max-width: 1023px) {
+		font-size: calc(100vw / 768 * 10);
+	}
+
+	@media (min-width: 1024px) and (max-width: 1439px) {
+		font-size: calc(100vw / 1439 * 10);
+	}
+}
+
+.container {
+	margin: 0 auto;
+
+	@include mq('desktop', max) {
+		padding: 0 1.6rem;
+		max-width: 39rem;
+	}
+
+	@include mq('desktop') {
+		padding: 0 10rem;
+		max-width: 144rem;
+	}
+}
+
+.main {
+	overflow: hidden;
+}
+
+.logo {
+	display: block;
+
+	font-family: $font-title;
+	line-height: 0.9;
+	text-decoration: none;
+	color: $black-color;
+
+	@include mq('desktop', max) {
+		font-size: 2.6rem;
+	}
+
+	@include mq('desktop') {
+		font-size: 3.3rem;
+	}
+}
+
+.btn {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	padding: 1.7rem;
+	width: 100%;
+	border-radius: 6.2rem;
+	margin: 0 auto;
+	background-color: transparent;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 1.6rem;
+}
+
+.title {
+	display: block;
+	font-family: $font-title;
+	letter-spacing: -2%;
+	line-height: 96%;
+	text-transform: uppercase;
+
+	@include mq('desktop', max) {
+		font-size: 3.2rem;
+	}
+
+	@include mq('desktop') {
+		font-size: 4.8rem;
+	}
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+.icon {
+	display: block;
+	fill: currentColor;
+	cursor: pointer;
+}
+
+.text {
+	display: block;
+	@include mq('desktop', max) {
+		background-color: $white-color;
+	}
+
+	@include mq('desktop') {
+		background-color: $black-color;
+	}
+}
+
+.stars {
+	display: flex;
+	color: $accent-color;
+
+	@include mq('desktop', max) {
+		gap: 0.5rem;
+	}
+
+	@include mq('desktop') {
+		gap: 0.6rem;
+	}
+
+	&--big {
+		@include mq('desktop', max) {
+			margin-bottom: 1.2rem;
+		}
+
+		@include mq('desktop') {
+			gap: 0.9rem;
+			margin-bottom: 1.8rem;
+		}
+	}
+
+	&__icon {
+		@include mq('desktop', max) {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+
+		@include mq('desktop') {
+			width: 1.8rem;
+			height: 1.8rem;
+		}
+
+		&--big {
+			@include mq('desktop', max) {
+				width: 1.9rem;
+				height: 1.9rem;
+			}
+
+			@include mq('desktop') {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
+}
+
+.products {
+	&__content {
+		@include mq('desktop', max) {
+			margin-bottom: 2.7rem;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 4.1rem;
+			font-size: 1.5rem;
+		}
+	}
+
+	&__title {
+		text-align: center;
+
+		@include mq('desktop', max) {
+			margin-bottom: 3.2rem;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 5.4rem;
+		}
+	}
+
+	&__swiper.swiper {
+		@include mq('desktop', max) {
+			margin-left: -1.6rem;
+			margin-right: -1.6rem;
+		}
+
+		@include mq('desktop') {
+			overflow: visible;
+		}
+	}
+
+	&__button {
+		position: sticky;
+		bottom: 1rem;
+		left: 1rem;
+
+		border: 0.1rem solid $black-color-transparent10;
+		color: $black-color;
+
+		&:hover {
+			// color: $white-color;
+			background-color: $black-color-transparent20;
+		}
+
+		@include mq('desktop', max) {
+			padding: 1.5rem;
+			font-size: 1.4rem;
+		}
+
+		@include mq('desktop') {
+			width: 21.8rem;
+			padding: 1.6rem;
+			font-size: 1.7rem;
+		}
+	}
+}
+
+.card {
+	display: block;
+	color: $black-color;
+	text-decoration: none;
+	font-size: 1.6rem;
+	border-radius: 1.2rem;
+
+	transition: box-shadow 0.3s ease;
+
+	&:hover {
+		transform: translateY(-4px); /* картка злегка піднімається */
+		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); /* тінь стає глибшою */
+	}
+
+	&__picture {
+		display: block;
+
+		@include mq('desktop', max) {
+			margin-bottom: 1.3rem;
+			width: 19.8rem;
+			height: 20.1rem;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 2rem;
+			width: 29.5rem;
+			height: 29.8rem;
+		}
+	}
+
+	&__img {
+		border-radius: 2rem;
+	}
+
+	&__subtitle {
+		letter-spacing: -2%;
+		font-weight: 800;
+
+		@include mq('desktop', max) {
+			margin-bottom: 0.65rem;
+		}
+
+		@include mq('desktop') {
+			font-size: 2rem;
+			margin-bottom: 1.2rem;
+		}
+	}
+
+	&__ratings {
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+
+		@include mq('desktop', max) {
+			margin-bottom: 0.8rem;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 1.1rem;
+		}
+	}
+
+	&__rating {
+		font-size: 1.3rem;
+
+		&--max {
+			color: $black-color-transparent40;
+		}
+	}
+
+	&__pricing {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	&__price {
+		font-weight: 800;
+		font-size: 2rem;
+
+		&--inactive {
+			color: $black-color-transparent40;
+			text-decoration-line: line-through;
+		}
+
+		@include mq('desktop') {
+			font-size: 2.4rem;
+		}
+	}
+
+	&__discount {
+		margin-left: 1rem;
+		display: block;
+		padding: 0.7rem 1.2rem;
+		font-size: 1.1rem;
+		border-radius: 1.2rem;
+		color: $text-accent-color;
+		background-color: $text-accent-color-transparent;
+	}
+}
+
+.form {
+	position: relative;
+	@include mq('desktop', max) {
+		font-size: 1.4rem;
+	}
+
+	@include mq('desktop') {
+		font-size: 1.6rem;
+	}
+}

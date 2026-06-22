@@ -1,0 +1,9 @@
+.selling {
+	@include mq('desktop', max) {
+		padding: 4.7rem 0 5rem;
+	}
+
+	@include mq('desktop') {
+		padding: 7.5rem 0 8rem;
+	}
+}

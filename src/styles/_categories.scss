@@ -1,0 +1,106 @@
+.categories {
+	@include mq('desktop', max) {
+		padding: 0 1.6rem;
+	}
+
+	@include mq('desktop') {
+		padding: 0 10rem;
+	}
+
+	&__container {
+		background-color: $background-color;
+
+		@include mq('desktop', max) {
+			padding: 4.5rem 2.4rem 2.7rem;
+			border-radius: 2rem;
+		}
+
+		@include mq('desktop') {
+			padding: 7.9rem 6.4rem 7.3rem;
+			border-radius: 4rem;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		line-height: 109%;
+
+		@include mq('desktop', max) {
+			margin-bottom: 2.3rem;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 6rem;
+		}
+	}
+
+	&__list {
+		display: flex;
+		@include mq('desktop', max) {
+			flex-direction: column;
+			gap: 1.6rem;
+		}
+
+		@include mq('desktop') {
+			display: grid;
+			grid-template-columns: repeat(8, 1fr);
+			gap: 2rem;
+		}
+	}
+}
+
+.category {
+	&__item {
+		position: relative;
+		border-radius: 2rem;
+		overflow: hidden;
+
+		background-color: $white-color;
+
+		@include mq('desktop', max) {
+			height: 19rem;
+		}
+
+		@include mq('desktop') {
+			height: 29rem;
+		}
+
+		&:nth-child(1),
+		&:nth-child(4) {
+			grid-column: span 3;
+		}
+
+		&:nth-child(2),
+		&:nth-child(3) {
+			grid-column: span 5;
+		}
+	}
+
+	&__img {
+		margin-left: auto;
+	}
+
+	&__link {
+		color: $black-color;
+	}
+
+	&__name {
+		position: absolute;
+
+		font-weight: 800;
+
+		@include mq('desktop', max) {
+			top: 1.9rem;
+			left: 2.1rem;
+
+			font-size: 2.4rem;
+		}
+
+		@include mq('desktop') {
+			top: 3.1rem;
+			left: 3.5rem;
+
+			font-size: 3.4rem;
+		}
+	}
+}

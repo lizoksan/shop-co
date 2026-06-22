@@ -1,0 +1,211 @@
+.footer {
+	background-color: $background-color;
+
+	@include mq('desktop', max) {
+		padding: 18.6rem 0 7.8rem;
+		margin-top: -15.8rem;
+	}
+
+	@include mq('desktop') {
+		padding: 14rem 0 8.2rem;
+		margin-top: -9rem;
+	}
+
+	&__top {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 0.1rem;
+			background-color: $black-color-transparent10;
+		}
+
+		@include mq('desktop', max) {
+			padding-bottom: 4rem;
+		}
+
+		@include mq('desktop') {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 2.4rem;
+		}
+	}
+
+	&__logo {
+		@include mq('desktop', max) {
+			margin-bottom: 1.2rem;
+			font-size: 2.9rem;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 2.4rem;
+			font-size: 3.4rem;
+			line-height: 0.7;
+		}
+	}
+
+	&__description {
+		font-size: 1.4rem;
+		letter-spacing: -3%;
+
+		@include mq('desktop', max) {
+			margin-bottom: 2rem;
+			line-height: 1.4;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 3.6rem;
+			max-width: 24.8rem;
+			line-height: 1.6;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		gap: 1.2rem;
+		margin-bottom: 2.4rem;
+	}
+
+	&__social_link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.8rem;
+		height: 2.8rem;
+		border: 0.1rem solid $black-color-transparent20;
+		background-color: $white-color;
+		border-radius: 50%;
+
+		&:hover {
+			fill: $white-color;
+			background-color: $black-color;
+		}
+	}
+
+	&__icon {
+		width: 1.3rem;
+		height: 1.3rem;
+
+		color: $black-color;
+
+		.footer__social_link:hover & {
+			color: $white-color;
+		}
+	}
+
+	&__columns {
+		@include mq('desktop', max) {
+			display: grid;
+			grid-template-columns: repeat(2, max-content);
+			gap: 2.4rem 5.9rem;
+		}
+
+		@include mq('desktop') {
+			display: flex;
+			gap: 12.7rem;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		letter-spacing: 0.3rem;
+
+		text-transform: uppercase;
+
+		@include mq('desktop', max) {
+			margin-bottom: 2rem;
+
+			font-size: 1.4rem;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 3.2rem;
+
+			font-size: 1.6rem;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+
+		@include mq('desktop', max) {
+			gap: 1.7rem;
+		}
+
+		@include mq('desktop') {
+			gap: 2.3rem;
+		}
+	}
+
+	&__link {
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: $black-color-transparent60;
+		text-decoration: none;
+
+		line-height: 1.1;
+	}
+
+	&__bottom {
+		display: flex;
+
+		align-items: center;
+		gap: 1.6rem;
+
+		color: $black-color-transparent60;
+
+		@include mq('desktop', max) {
+			flex-direction: column;
+			padding-top: 1.9rem;
+		}
+
+		@include mq('desktop') {
+			flex-direction: row;
+			justify-content: space-between;
+			padding-top: 2.1rem;
+		}
+	}
+
+	&__copyright {
+		font-size: 1.3rem;
+		color: $black-color-transparent60;
+	}
+
+	&__payments {
+		display: flex;
+		@include mq('desktop', max) {
+			gap: 1rem;
+		}
+
+		@include mq('desktop') {
+			gap: 1.3rem;
+		}
+	}
+
+	&__payment {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.3rem 0.9rem;
+
+		background-color: $white-color;
+		border-radius: 0.5rem;
+	}
+
+	&__pay {
+		@include mq('desktop', max) {
+			width: 2.2rem;
+			height: 2rem;
+		}
+
+		@include mq('desktop') {
+			width: 2.8rem;
+			height: 2.3rem;
+		}
+	}
+}
