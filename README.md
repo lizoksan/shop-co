@@ -1,31 +1,38 @@
-Markdown
+# Shop.co — E-commerce Landing Page
 
-# Shop.co — E-commerce Website (Educational Project)
+An educational project: a responsive online store landing page with product
+sliders and a mobile navigation menu.
 
-Responsive e-commerce landing page with modern layout, sliders, and interactive mobile navigation.
+🔗 Live demo: https://lizoksan.github.io/shop-co/
 
-## 🚀 Live Demo
+![Project screenshot](src/assets/img/preview.png)
 
-[View Live Project](https://lizoksan.github.io/shop-co/)
+## What it does
 
-## 🛠️ Tech Stack & Tools
+- Browse product categories and new arrivals
+- Product and review sliders (Swiper.js)
+- Mobile navigation menu with body scroll lock
+- Fully responsive: from 320px (mobile) up to 1440px+ (desktop)
 
-- **HTML5** (Semantic layout, SVG Sprites)
-- **CSS3 / SCSS** (BEM methodology, Flexbox, Grid, Media Queries)
-- **JavaScript (ES6+)** (DOM manipulation)
-- **Swiper.js** (Custom touch-slider for products and reviews)
-- **Webpack 5** (Module bundler, asset management, optimization)
+## Built with
 
-## 📱 Features
+- HTML5 (semantic markup, SVG sprite for icons)
+- SCSS (BEM methodology, Flexbox, Grid)
+- JavaScript (ES6+)
+- Webpack 5 — bundler, image compression
 
-- **Fully Responsive:** Optimized for Mobile (from 320px) and Desktop (up to 1440px+).
-- **Interactive Mobile Menu:** Accessable aria-attributes, smooth toggle, and body scroll lock.
-- **Advanced Sliders:** Custom product carousels and reviews slider with blur effects using Swiper.js.
-- **Performance Optimized:** Images are compressed via Webpack, vector icons loaded via a single SVG sprite.
+## What was new for me
 
-## 💻 How to Run Locally
+- First time building an accessible mobile menu (ARIA attributes, scroll lock)
+- Set up image compression and an SVG icon sprite through Webpack
 
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/lizoksan/shop-co.git](https://github.com/lizoksan/shop-co.git)
-   ```
+## Run it locally
+
+```bash
+git clone https://github.com/lizoksan/shop-co.git
+cd shop-co
+npm install
+
+npm start        # dev server
+npm run build     # production build
+```
