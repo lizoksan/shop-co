@@ -5,7 +5,7 @@ sliders and a mobile navigation menu.
 
 🔗 Live demo: https://lizoksan.github.io/shop-co/
 
-![Project screenshot](src/assets/img/preview.png)
+![Project screenshot](src/assets/img/preview.jpg)
 
 ## What it does
 
